@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bloqueia a indexação pelos motores de busca (Google, Bing, etc.) -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    
+    <title>Apartamento à Venda - Condomínio Bem Estar Guarulhos</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-primary: #fbfbfd;
+            --bg-secondary: #ffffff;
+            --text-main: #2d3142;
+            --text-muted: #6c757d;
+            --accent: #b8926a; /* Tom elegante dourado/champanha */
+            --accent-dark: #96744f;
+            --whatsapp-color: #25d366;
+            --border-color: #eaeaea;
+            --radius: 12px;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('10.webp') center/cover no-repeat;
+            /* Caso dê erro ou demore a carregar a imagem de fundo, tem o fallback elegante */
+            background-color: #1a2530;
+            height: 70vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .badge-floor {
+            background-color: var(--accent);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Seção Sobre / Mensagem */
+        .intro-section {
+            padding: 60px 0;
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .intro-card {
+            background-color: var(--bg-primary);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--accent);
+        }
+
+        .intro-card h2 {
+            margin-bottom: 20px;
+            color: var(--text-main);
+            font-size: 1.8rem;
+        }
+
+        .intro-card p {
+            font-size: 1.1rem;
+            color: #4a5068;
+            margin-bottom: 15px;
+        }
+
+        /* Características / Destaques */
+        .features-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+            margin: 12px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Galeria de Fotos */
+        .gallery-section {
+            padding: 80px 0;
+            background-color: var(--bg-secondary);
+        }
+
+        .gallery-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-filter {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .gallery-filter.active, .gallery-filter:hover {
+            background-color: var(--text-main);
+            color: white;
+            border-color: var(--text-main);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: calc(var(--radius) - 4px);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            cursor: pointer;
+            background-color: #f0f0f0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-item-tag {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 3px 10px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
+            pointer-events: none;
+        }
+
+        /* CTA de Contato */
+        .cta-section {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #1a2a3a 0%, #2d3142 100%);
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 0.85;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            margin-top: 25px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        /* Footer e Contador de Acessos */
+        footer {
+            background-color: var(--bg-primary);
+            padding: 30px 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        /* Contador de acessos "oculto" conforme solicitado. 
+           Fica com opacidade extremamente baixa, misturando-se sutilmente com o fundo.
+        */
+        .counter-wrapper {
+            opacity: 0.06;
+            transition: opacity 0.3s ease;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .counter-wrapper:hover {
+            opacity: 0.5; /* Mostra ligeiramente se passar o mouse por cima de propósito */
+        }
+
+        /* Botão flutuante do WhatsApp para Mobile */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox Modal para Visualizar Fotos Grandes */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 4px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .lightbox-close:hover {
+            color: var(--accent);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2rem; }
+            .hero-content p { font-size: 1.1rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .intro-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511964782745?text=Olá%20Vander,%20vi%20o%20site%20do%20seu%20apartamento%20no%20Condomínio%20Bem%20Estar%20e%20gostaria de%20mais%20informações." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Header -->
+    <header>
+        <div class="hero-content">
+            <span class="badge-floor"><i class="fas fa-building"></i> Bloco B - 21º Andar (Último Andar)</span>
+            <h1>Condomínio Bem Estar Guarulhos</h1>
+            <p>Apartamento planejado de 2 dormitórios com vista livre e privilegiada</p>
+            <a href="#contato" class="btn btn-primary"><i class="fas fa-envelope"></i> Agendar uma Visita</a>
+        </div>
+    </header>
+
+    <!-- Seção de Mensagem de Boas-vindas -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-card">
+                <h2>Olá, vizinhos e interessados! Tudo bem?</h2>
+                <p>Estou colocando meu apartamento de <strong>2 dormitórios à venda</strong> e gostaria de compartilhar com vocês esta excelente oportunidade para quem busca morar em um andar alto, com ambiente silencioso, vista linda e móveis planejados de altíssima qualidade em todos os ambientes.</p>
+                <p>Veja os detalhes abaixo e fique à vontade para agendar uma visita ou compartilhar com conhecidos!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Detalhadas -->
+    <section class="features-section" id="detalhes">
+        <div class="container">
+            <h2 class="section-title">Destaques do Imóvel</h2>
+            <p class="section-subtitle">Tudo planejado nos mínimos detalhes para o seu máximo conforto</p>
+            
+            <div class="features-grid">
+                <!-- Varanda -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-laptop-house"></i></div>
+                    <h3>Varanda “Office”</h3>
+                    <p>Espaço totalmente envidraçado, equipado com persianas sob medida e móveis planejados prontos para o seu home office confortável.</p>
+                </div>
+                <!-- Cozinha -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Cozinha Planejada</h3>
+                    <p>Armários modernos e sob medida com otimização completa de espaço para eletrodomésticos e utensílios.</p>
+                </div>
+                <!-- Dormitórios -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bed"></i></div>
+                    <h3>2 Dormitórios</h3>
+                    <p>Quartos aconchegantes (incluindo uma bela suíte), ambos repletos de móveis planejados de excelente bom gosto.</p>
+                </div>
+                <!-- Banheiros -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shower"></i></div>
+                    <h3>2 Banheiros</h3>
+                    <p>Tanto o banheiro social quanto o da suíte possuem móveis planejados, pias modernas e acabamento premium.</p>
+                </div>
+                <!-- Lavanderia -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-soap"></i></div>
+                    <h3>Lavanderia</h3>
+                    <p>Área de serviço prática, organizada e equipada com móveis planejados de alta qualidade.</p>
+                </div>
+                <!-- Vaga de Garagem -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                    <h3>Vaga de Garagem Solta</h3>
+                    <p>Vaga livre e independente, facilitando imensamente as manobras diárias sem depender de vizinhos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos Interativa -->
+    <section class="gallery-section" id="fotos">
+        <div class="container">
+            <h2 class="section-title">Galeria de Fotos</h2>
+            <p class="section-subtitle">Clique nas abas abaixo para filtrar por ambiente</p>
+
+            <!-- Filtros da Galeria -->
+            <div class="gallery-nav">
+                <button class="gallery-filter active" onclick="filterGallery('todos')">Todos os Ambientes</button>
+                <button class="gallery-filter" onclick="filterGallery('sala')">Sala & Varanda Office</button>
+                <button class="gallery-filter" onclick="filterGallery('cozinha')">Cozinha & Lavanderia</button>
+                <button class="gallery-filter" onclick="filterGallery('quartos')">Dormitórios & Suíte</button>
+                <button class="gallery-filter" onclick="filterGallery('banheiros')">Banheiros</button>
+                <button class="gallery-filter" onclick="filterGallery('vista')">Vista Privilegiada</button>
+            </div>
+
+            <!-- Grid de Imagens -->
+            <div class="gallery-grid">
+                <!-- Sala, Estar e Varanda Office -->
+                <div class="gallery-item" data-category="sala" onclick="openLightbox(this)">
+                    <img src="01.webp" alt="Sala e Varanda 1">
+                    <div class="gallery-item-tag">Sala / Office</div>
+                </div>
+                <div class="gallery-item" data-category="sala" onclick="openLightbox(this)">
+                    <img src="02.webp" alt="Sala e Varanda 2">
+                    <div class="gallery-item-tag">Sala / Office</div>
+                </div>
+                <div class="gallery-item" data-category="sala" onclick="openLightbox(this)">
+                    <img src="03.webp" alt="Sala e Varanda 3">
+                    <div class="gallery-item-tag">Sala / Office</div>
+                </div>
+                <div class="gallery-item" data-category="sala" onclick="openLightbox(this)">
+                    <img src="04.webp" alt="Sala e Varanda 4">
+                    <div class="gallery-item-tag">Sala / Office</div>
+                </div>
+
+                <!-- Quarto 1 -->
+                <div class="gallery-item" data-category="quartos" onclick="openLightbox(this)">
+                    <img src="05.webp" alt="Quarto 1 - Foto A">
+                    <div class="gallery-item-tag">Quarto 1</div>
+                </div>
+                <div class="gallery-item" data-category="quartos" onclick="openLightbox(this)">
+                    <img src="06.webp" alt="Quarto 1 - Foto B">
+                    <div class="gallery-item-tag">Quarto 1</div>
+                </div>
+
+                <!-- Banheio Social -->
+                <div class="gallery-item" data-category="banheiros" onclick="openLightbox(this)">
+                    <img src="07.webp" alt="Banheiro Social">
+                    <div class="gallery-item-tag">Banheiro Social</div>
+                </div>
+
+                <!-- Suíte -->
+                <div class="gallery-item" data-category="quartos" onclick="openLightbox(this)">
+                    <img src="08.webp" alt="Suíte - Foto A">
+                    <div class="gallery-item-tag">Suíte</div>
+                </div>
+                <div class="gallery-item" data-category="quartos" onclick="openLightbox(this)">
+                    <img src="09.webp" alt="Suíte - Foto B">
+                    <div class="gallery-item-tag">Suíte</div>
+                </div>
+                <div class="gallery-item" data-category="quartos" onclick="openLightbox(this)">
+                    <img src="10.webp" alt="Suíte - Foto C">
+                    <div class="gallery-item-tag">Suíte</div>
+                </div>
+
+                <!-- Banheiro Suíte -->
+                <div class="gallery-item" data-category="banheiros" onclick="openLightbox(this)">
+                    <img src="11.webp" alt="Banheiro Suíte 1">
+                    <div class="gallery-item-tag">Banheiro Suíte</div>
+                </div>
+                <div class="gallery-item" data-category="banheiros" onclick="openLightbox(this)">
+                    <img src="12.webp" alt="Banheiro Suíte 2">
+                    <div class="gallery-item-tag">Banheiro Suíte</div>
+                </div>
+                <div class="gallery-item" data-category="banheiros" onclick="openLightbox(this)">
+                    <img src="13.webp" alt="Banheiro Suíte 3">
+                    <div class="gallery-item-tag">Banheiro Suíte</div>
+                </div>
+
+                <!-- Cozinha -->
+                <div class="gallery-item" data-category="cozinha" onclick="openLightbox(this)">
+                    <img src="14.webp" alt="Cozinha 1">
+                    <div class="gallery-item-tag">Cozinha</div>
+                </div>
+                <div class="gallery-item" data-category="cozinha" onclick="openLightbox(this)">
+                    <img src="15.webp" alt="Cozinha 2">
+                    <div class="gallery-item-tag">Cozinha</div>
+                </div>
+                <div class="gallery-item" data-category="cozinha" onclick="openLightbox(this)">
+                    <img src="16.webp" alt="Cozinha 3">
+                    <div class="gallery-item-tag">Cozinha</div>
+                </div>
+
+                <!-- Lavanderia -->
+                <div class="gallery-item" data-category="cozinha" onclick="openLightbox(this)">
+                    <img src="17.webp" alt="Lavanderia 1">
+                    <div class="gallery-item-tag">Lavanderia</div>
+                </div>
+                <div class="gallery-item" data-category="cozinha" onclick="openLightbox(this)">
+                    <img src="18.webp" alt="Lavanderia 2">
+                    <div class="gallery-item-tag">Lavanderia</div>
+                </div>
+
+                <!-- Vista -->
+                <div class="gallery-item" data-category="vista" onclick="openLightbox(this)">
+                    <img src="10.webp" alt="Vista Panorâmica 1">
+                    <div class="gallery-item-tag">Vista 21º Andar</div>
+                </div>
+                <div class="gallery-item" data-category="vista" onclick="openLightbox(this)">
+                    <img src="20.webp" alt="Vista Panorâmica 2">
+                    <div class="gallery-item-tag">Vista 21º Andar</div>
+                </div>
+                <div class="gallery-item" data-category="vista" onclick="openLightbox(this)">
+                    <img src="21.webp" alt="Vista Panorâmica 3">
+                    <div class="gallery-item-tag">Vista 21º Andar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Chamada para Ação / Contato -->
+    <section class="cta-section" id="contato">
+        <div class="container">
+            <h2>Gostou? Vamos conversar!</h2>
+            <p>Quem tiver interesse em conhecer pessoalmente, queira compartilhar com amigos ou agendar uma visita, estou inteiramente à disposição para conversarmos diretamente.</p>
+            
+            <a href="https://wa.me/5511964782745?text=Olá%20Vander,%20gostaria%20de%20agendar%20uma%20visita%20para%20conhecer%20o%20apartamento." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> Chamar no WhatsApp (Vander)
+            </a>
+
+            <div class="contact-info">
+                <i class="fas fa-phone-alt"></i> (11) 96478-2745
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Condomínio Bem Estar Guarulhos - Apartamento do Vander. Todos os direitos reservados.</p>
+        
+        <!-- 
+            Contador de acessos semi-oculto. 
+            Ele usa uma ferramenta gratuita (hits.seeyoufarm.com) feita para repositórios estáticos (como GitHub Pages).
+            Dica: Se você mudar o parâmetro 'url=' abaixo para o link final do seu site, ele contará perfeitamente apenas o seu site!
+        -->
+        <div class="counter-wrapper">
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvander-guarulhos-ap&count_bg=%23FBFBFD&title_bg=%23FBFBFD&title=visitas&edge_flat=true" alt="Acessos">
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal Box -->
+    <div class="lightbox" id="lightboxModal" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Foto Ampliada">
+    </div>
+
+    <!-- Scripts em Vanilla JS (Super leves, ótimos para o Github Pages) -->
+    <script>
+        // Função para filtrar a galeria de imagens
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-filter');
+
+            // Atualiza classe ativa nos botões
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filtra os itens
+            items.forEach(item => {
+                if (category === 'todos' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Funções para o Lightbox (Clique para ampliar imagem)
+        function openLightbox(element) {
+            const lightbox = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const imgSrc = element.querySelector('img').src;
+            
+            lightboxImg.src = imgSrc;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightboxModal');
+            lightbox.classList.remove('active');
+        }
+
+        // Fechar com a tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
